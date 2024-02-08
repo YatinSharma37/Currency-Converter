@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6f859b;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    background-color: #b2c790;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    min-height: 60vh;
+    width: 50vh;
+    box-shadow: 20px 20px 0px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.5s ease forwards;
+    border-style:double;
+    border-color: #343a40;
+    border-width: 10px;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  form {
+    margin: 2rem 0 1rem 0;
+  }
+  
+  .amount {
+    margin-bottom: 2rem;
+  }
+  
+  .amount p,
+  .from p,
+  .to p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 0.75rem;
+    font-size: 1.1rem;
+  }
+  
+  .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  
+  .dropdown i {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    color: #666;
+  }
+  
+  .select-container img {
+    max-width: 3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+  
+  .select-container {
+    display: flex;
+    align-items: center;
+    border-radius: 0.75rem;
+    border: 2px solid #ced4da;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .select-container:hover {
+    border-color: #6c757d;
+  }
+  
+  .select-container select {
+    font-size: 1.2rem;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  
+  .msg {
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #666;
+  }
+  
+  form button {
+    height: 4rem;
+    background-color: #343a40;
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 0.75rem;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #6c757d;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  input{
+    background-color: rgb(20, 19, 19);
+    color: white;
+    
+  }
